@@ -1,0 +1,40 @@
+2015/04/16 15:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/html/cms_project/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/cms_project/index.php?r=gii
+---
+2015/04/16 15:15:47 [error] [php] require(/var/www/html/cms_project/themes/classic/views/site/index.php): failed to open stream: Permission denied (/var/www/html/yii/framework/web/CBaseController.php:126)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/html/cms_project/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/cms_project/index.php(13): CWebApplication->run()
+REQUEST_URI=/cms_project/index.php
+in /var/www/html/cms_project/protected/controllers/SiteController.php (32)
+in /var/www/html/cms_project/index.php (13)
+2015/04/16 15:15:57 [error] [php] require(/var/www/html/cms_project/themes/classic/views/site/index.php): failed to open stream: Permission denied (/var/www/html/yii/framework/web/CBaseController.php:126)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/html/cms_project/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/cms_project/index.php(13): CWebApplication->run()
+REQUEST_URI=/cms_project/
+in /var/www/html/cms_project/protected/controllers/SiteController.php (32)
+in /var/www/html/cms_project/index.php (13)
